@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">exenta</string>
+    <string name="user">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="remember_password">Remember password</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="Leave">Leave</string>
+    <string name="pod">POD</string>
+    <string name="Permission">Permission</string>
+    <string name="calender_label">Leave Apply</string>
+    <string name="customize">Customize</string>
+    <string name="show_dialog">Show Dialog</string>
+    <string name="undo">Undo</string>
+    <string name="declaredHolidays">Declared Holiday</string>
+    <string name="recurringHoliday">Recurring Holiday</string>
+    <string name="approvedLeaves">Approved Leaves</string>
+    <string name="pendingApprovals">Pending Approval</string>
+    <string name="rejected">Rejected</string>
+    <string name="compensate">Compensate</string>
+    <string name="general">General</string>
+    <string name="comoff">Compensatory Off</string>
+    <string name="leavecat">Leave Category*</string>
+    <string name="fromdate">From Date*</string>
+    <string name="todate">To Date*</string>
+    <string name="leavetype">Leave Type*</string>
+    <string name="totaldays">Total Days*</string>
+    <string name="leavereason">Leave Reason*</string>
+    <string name="apply">Apply</string>
+    <string name="reset">Reset</string>
+    <string name="leavedate">Leave Date</string>
+    <string name="comtype">Compensation Type</string>
+    <string name="comdate">Compensation Date</string>
+    <string name="session">Session*</string>
+    <string name="session_strings">Select one</string>
+
+    <!-- Employee Directory -->
+
+    <string name="Staff_Info_Link_Emp_List">Employee List</string>
+    <string name="Staff_Info_Link_Emp_Report">Employee Report</string>
+    <string name="Staff_Info_Link_Skill">Skill Matrix</string>
+    <string name="Staff_Info_Link_Org">Organization Profile</string>
+    <string name="Staff_Info_Link_History">History</string>
+    <string name="active_emp">Active Employees</string>
+    <string name="inactive_emp">Inactive Employees</string>
+    <string name="search">Search</string>
+    <string name="emp_details">Employee Details</string>
+    <string name="company">Company / Branch</string>
+    <string name="manage">Management</string>
+    <string name="loading">Loading...</string>
+    <string name="my_profile">My Profile</string>
+
+    <string-array name="colors">
+        <item>#004B4B</item>
+        <item>#DE9C59</item>
+        <item>#ffffff</item>
+    </string-array>
+    <string-array name="yes_or_no">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <!-- Profile Page -->
+    <string name="cmpy_name">Company Name</string>
+    <string name="department">Department</string>
+    <string name="experience">Experience</string>
+    <string name="mail">Email</string>
+    <string name="report_mngr">Report Manager</string>
+
+    <string-array name="session">
+        <item>Full</item>
+        <item>1st session</item>
+        <item>2nd session</item>
+    </string-array>
+
+    <string name="compotype_strings">Select one</string>
+
+    <string-array name="compotype">
+        <item>Please Select</item>
+        <item>Compo off</item>
+    </string-array>
+    <string-array name="notificationListView">
+        <item>Notification</item>
+        <item>Pending Approvals</item>
+        <item>News and Feeds</item>
+    </string-array>
+
+    <array name="notificationIcons">
+        <item>@drawable/notificationbg</item>
+        <item>@drawable/newsbg</item>
+        <item>@drawable/pendingbg</item>
+    </array>
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Summary</item>
+        <item>Calendar</item>
+        <item>Apply</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_people</item>
+    </array>
+
+    <string name="attndreport">My Attendance Report</string>
+    <string name="attndbalancereport">My Leave Balance Summary</string>
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!-- Leave Module -->
+    <string name="leaveappy">Leave Apply</string>
+    <string name="leaveapproval">Leave Approval</string>
+    <string name="timesheetentry">Timesheet Entry</string>
+    <string name="timesheettextview">Your time sheet not yet started</string>
+    <string name="timesheetclockin">Clock IN</string>
+    <string name="timesheetclockout">Clock OUT</string>
+    <string name="pretimesheet">Previous Timesheet</string>
+    <string name="datefrom">Date From</string>
+    <string name="dateto">Date To</string>
+   	    <string name="my_leave_request">My Leave Request</string>
+    <string name="my_recent_leave">My Recent Leave</string>
+        <string-array name="leavecategory">
+        <item>General</item>
+        <item>Compensatory Off</item>     
+    </string-array>
+        <string name="leave_type_">Leave Type:</string>
+        <string name="pendingStatus">Pending</string>
+        <string name="leavetotaldays">Total days</string>
+    
+        <string-array name="contextmenu">
+            <item>Yes</item>
+            <item>No</item>            
+        </string-array>
+
+        <string-array name="regulcategory">            
+            <item>Missed Punch</item>
+            <item>POD</item>
+            <item>Leave</item>
+            <item>Permission Hours</item>            
+        </string-array>
+        
+        
+        
+ 
+    <string name="my_regularization_request">My Regularization Request</string>
+      
+    <string name="missed_punch">Missed Punch Apply</string>
+    
+    <string name="regularize_POD">POD Apply</string>
+         <!-- permission........................................... -->
+     <string name="Permission_reg">My Permission Request</string>
+    <string name="Permission_manage">Manage Permission</string>
+    <string name="Permission_approval">Permission Approval</string>
+  
+    
+    <string name="reqdate">Request Date    : </string>
+    <string name="permissiondate">Permission Date   : </string>
+    <string name="totalhrs">Total Hours             : </string>
+     <string name="permissiondetails">Permission Details</string>
+      <string name="permissionstatus">Permission Status</string>
+     <string name="per_name">Name</string>
+     <string name="per_jobtitle">Job Title</string>
+     <string name="per_empid">Employee ID</string>
+      <string name="per_com">Company</string>
+     <string name="per_appdate">Applied Date</string>
+      <string name="per_permdate">Permission Date</string>
+     <string name="per_thrs">Total Hours</string> 
+      <string name="per_timing">Timing</string> 
+       <string name="per_permtype">Permission Type</string> 
+       
+        <string name="per_reason">Reason</string> 
+        <string name="per_resp">Response</string> 
+          
+        <string name="radio_app">Approve</string> 
+        <string name="radio_reject">Reject</string> 
+          
+        <string name="per_btnsubmit">Submit</string> 
+        <string name="per_btncancel">Cancel</string> 
+         <string name="per_frmtm">From Time</string> 
+        <string name="per_totm">To Time</string> 
+         <string name="per_jus">Justification*</string> 
+           <string name="per_ttldur">Total Duration</string> 
+            <string name="per_apply">Apply</string> 
+            <string name="per_reset">Reset</string>  
+        <string name="per_balnc">Available Balance</string> 
+
+    
+        
+</resources>

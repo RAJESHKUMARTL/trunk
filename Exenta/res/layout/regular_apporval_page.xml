@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.exentahrms.pod.ApprovalPODPage" 
+    >
+
+<RelativeLayout
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/empname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Emp Name"
+            android:textColor="@color/pod_blue"
+            android:textSize="@dimen/profile_large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jobtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Job Title" />
+
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jobtitle"
+            android:layout_centerHorizontal="true"
+            android:text="Company Name" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/topLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/profile_margin_left"
+            android:padding="@dimen/text_padding"
+            android:text="Regularization Time"
+            android:textSize="@dimen/profile_small" />
+
+        <TextView
+            android:id="@+id/regtimming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/profile_margin_left"
+            android:padding="@dimen/text_padding"
+            android:text="Emp Code"
+            android:textColor="@color/pod_blue"
+            android:textSize="@dimen/profile_medium" />
+
+        <include layout="@layout/divider" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/profile_margin_left"
+            android:padding="@dimen/text_padding"
+            android:text="Type"
+            android:textSize="@dimen/profile_small" />
+
+        <TextView
+            android:id="@+id/podtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/empcode"
+            android:layout_marginLeft="@dimen/profile_margin_left"
+            android:padding="@dimen/text_padding"
+            android:text="Type"
+            android:textColor="@color/pod_blue"
+            android:textSize="@dimen/profile_medium" />
+
+        <include layout="@layout/divider" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/profile_margin_left"
+            android:padding="@dimen/text_padding"
+            android:text="Total Hours"
+            android:textSize="@dimen/profile_small" />
+
+        <TextView
+            android:id="@+id/totaldays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/podtype"
+            android:layout_marginLeft="@dimen/profile_margin_left"
+            android:padding="@dimen/text_padding"
+            android:text="Total Hours"
+            android:textColor="@color/pod_blue"
+            android:textSize="@dimen/profile_medium" />
+
+        <include layout="@layout/divider" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/profile_margin_left"
+            android:padding="@dimen/text_padding"
+            android:text="Reason"
+            android:textSize="@dimen/profile_small" />
+
+        <TextView
+            android:id="@+id/reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/totaldays"
+            android:layout_marginLeft="@dimen/profile_margin_left"
+            android:padding="@dimen/text_padding"
+            android:text="Reason"
+            android:textColor="@color/pod_blue"
+            android:textSize="@dimen/profile_medium" />
+
+        <include layout="@layout/divider" />
+
+        <EditText
+            android:id="@+id/response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/reason"
+            android:ems="10"
+            android:focusableInTouchMode="true"
+            android:hint="Response"
+            android:inputType="textMultiLine" >
+        </EditText>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/response"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/approve_radiobtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Approval" />
+
+            <RadioButton
+                android:id="@+id/reject_radiobtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reject" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/green_button_border"
+                android:text="Submit"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/red_button_border"
+                android:text="Cancel"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/applieddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignRight="@+id/topLayout"
+        android:text="Applied Date" />
+</RelativeLayout>
+
+</ScrollView>

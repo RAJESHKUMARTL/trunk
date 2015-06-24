@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">CalendarFragment</string>
+	 <string name="customize">Customize</string>
+    <string name="show_dialog">Show Dialog</string>
+    <string name="undo">Undo</string>
+    <string name="declaredHolidays">Declared Holiday</string>
+    <string name="recurringHoliday">Recurring Holiday</string>
+    <string name="approvedLeaves">Approved Leaves</string>
+    <string name="pendingApprovals">Pending Approval</string>
+    <string name="rejected">Rejected</string>
+    <string name="compensate">Compensate</string>	
+    
+    
+</resources>

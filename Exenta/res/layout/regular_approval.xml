@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+ <!--    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_main_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >  -->
+        <ListView
+            android:id="@+id/approval_list_reg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_row_selector" >
+        </ListView>
+    <!-- </android.support.v4.widget.SwipeRefreshLayout> -->
+
+    <LinearLayout
+        android:id="@+id/refreshlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/pull_down"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:src="@drawable/pulldown" />
+
+        <TextView
+            android:id="@+id/refreshloading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Pull Down to Refresh"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#9E9E9E" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/jsonloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/no_result_img"
+            android:layout_width="58dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:background="@drawable/searching" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Loading.."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- rounded_Corner_edittext -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="#ffffff" />
+
+    <stroke
+        android:width="2dp"
+        android:color="#D2D7D3" />
+
+    <corners android:radius="4dp" />
+
+<padding
+        android:bottom="8dp"
+        android:left="8dp"
+        android:right="8dp"
+        android:top="8dp" />  
+
+</shape>

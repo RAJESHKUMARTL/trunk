@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    
+        <dimen name="name">17dp</dimen>
+    <dimen name="job_title">15dip</dimen>
+    <dimen name="empid">12dip</dimen>  
+    <dimen name="first">10dp</dimen>
+    <dimen name="second">15dp</dimen>
+    <dimen name="third">20dp</dimen>
+    <dimen name="spinner_height">40dp</dimen>
+    <dimen name="layout_padding">5dp</dimen>
+    <dimen name="text_padding">4dp</dimen>
+
+    <!-- Profile Page -->
+    <dimen name="profile_large">22sp</dimen>
+    <dimen name="profile_medium">18sp</dimen>
+    <dimen name="profile_small">14sp</dimen>
+    <dimen name="profile_margin_left">20dp</dimen>
+	<dimen name="profile_margin">10dp</dimen>
+    
+	
+	
+    
+	
+	
+	<dimen name="header_height">40dp</dimen>
+    <dimen name="margin_header_word">10dp</dimen>
+    <dimen name="icon_dim">25dp</dimen>
+    <dimen name="sub_title_size">15sp</dimen>
+    
+    
+       <dimen name="item_height">67dp</dimen>
+    <dimen name="section_div_height">20dp</dimen>
+	
+	
+</resources>

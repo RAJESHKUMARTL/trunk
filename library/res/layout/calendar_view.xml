@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/caldroid_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/calendar_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/calendar_left_arrow"
+            android:layout_width="50dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/left_arrow" />
+
+        <TextView
+            android:id="@+id/calendar_month_year_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@+id/calendar_right_arrow"
+            android:layout_toRightOf="@+id/calendar_left_arrow"
+            android:gravity="center_horizontal"
+            android:textIsSelectable="true"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/calendar_right_arrow"
+            android:layout_width="50dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/right_arrow" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/weekday_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:numColumns="7"
+        android:stretchMode="columnWidth" >
+    </GridView>
+
+    <com.antonyt.infiniteviewpager.InfiniteViewPager
+        android:id="@+id/months_infinite_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp" />
+
+    <LinearLayout
+                android:id="@+id/relative_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2" >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp" >
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/plum"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/declaredHolidays" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp" >
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/green"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recurringHoliday" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp" >
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/yellow"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pendingApprovals" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp" >
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout01"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/darkgreen"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/TextView02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/approvedLeaves" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp" >
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout03"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/red"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/TextView01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rejected" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp">
+                        <LinearLayout
+                            android:id="@+id/LinearLayout02"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/grey"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/TextView03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/compensate" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+    
+    
+    
+</LinearLayout>

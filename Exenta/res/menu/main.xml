@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+         
+                          
+          <item
+        android:id="@+id/one" 
+        android:background="@color/default_white"
+        android:title="Logout"/>
+        <item
+        android:id="@+id/three" 
+        android:background="@color/default_white"
+        android:title="close"/>
+                            
+    
+
+</menu>

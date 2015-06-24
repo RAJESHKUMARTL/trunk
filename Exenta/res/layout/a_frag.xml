@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/leave"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttoncaption"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <ImageView
+            android:id="@+id/leave_img"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:src="@drawable/mypod" />
+
+        <TextView
+            android:id="@+id/leave_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.9"
+            android:clickable="false"
+            android:text="@string/leaveappy"
+            android:textColor="@color/text_view"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/list_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight=".1"
+            android:clickable="false"
+            android:src="@drawable/blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pod"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttoncaption"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <ImageView
+            android:id="@+id/pod_img"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:src="@drawable/apply_list" />
+
+        <TextView
+            android:id="@+id/pod_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.9"
+            android:clickable="false"
+            android:text="@string/leaveapproval"
+            android:textColor="@color/text_view"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/list_icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight=".1"
+            android:clickable="false"
+            android:src="@drawable/blue" />
+    </LinearLayout>
+
+</LinearLayout>

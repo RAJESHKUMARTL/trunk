@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/SHAMROCK"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Apply POD"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/spinnertxtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="POD Category*"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/pod_type_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:background="@drawable/layoutborder"/>
+
+            <TextView
+                android:id="@+id/leavetxtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:text="POD Reason"
+                  android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/leavereason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutborder"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:layout_marginTop="5dp"
+                android:padding="5dp" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+             android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/fromdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layoutborder"
+                    android:drawableLeft="@drawable/datepickermob"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/fromdate"
+                    android:inputType="date"
+                    android:padding="10dp" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/todate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layoutborder"
+                    android:drawableLeft="@drawable/datepickermob"
+                    android:ems="10"
+                    android:layout_marginLeft="5dp"
+                    android:focusable="false"
+                    android:hint="@string/todate"
+                    android:inputType="date"
+                    android:padding="10dp" />
+            </LinearLayout>
+  <TextView
+                android:id="@+id/ttldays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+               android:layout_marginTop="10dp"
+                android:text="Total Days*"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:id="@+id/totaldays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutborder"
+                android:ems="10"
+                   android:focusable="false"
+                android:padding="10dp"
+                android:layout_marginTop="5dp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/sessiontxtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Session"
+                  android:textStyle="bold"
+                  android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/session"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/session"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/layoutborder"
+                android:prompt="@string/session_strings" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:baselineAligned="true"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/apply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/approvalbutton_submit"
+                    android:text="@string/apply"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/approvalbutton_cancel"
+                    android:text="@string/reset"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

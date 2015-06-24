@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/default_white" >
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_btn_style"
+        android:drawableLeft="@drawable/user_icn"
+        android:gravity="fill"
+        android:drawablePadding="5dp"
+        android:hint="@string/user"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/text_color" />
+    
+    <TextView
+        android:id="@+id/usernameError"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/text_color"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameError"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_btn_style"
+        android:drawableLeft="@drawable/pwd_icn"
+        android:gravity="fill"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+                android:drawablePadding="5dp"
+        
+        android:paddingTop="5dp"
+        android:textColor="@color/text_color"/>
+
+    <TextView
+        android:id="@+id/passwordError"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/text_color"
+        android:visibility="gone" />
+    
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordError"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/btn_color"
+        android:drawableLeft="@drawable/login_icn"
+        android:paddingRight="40dp"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="@string/login"
+        android:textSize="15dp"
+        android:onClick="login"
+        android:textColor="@color/default_white" />
+
+    <CheckBox
+        android:id="@+id/remember_psw"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"       
+       	android:gravity="fill"        
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:button="@drawable/remember_checkbox"
+        android:text="@string/remember_password"
+        android:textColor="@color/text_color" />    
+</RelativeLayout>
